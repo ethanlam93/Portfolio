@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" type="text/css" href="./bulma.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<body>
+    <section class="hero is-primary is-medium">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            Ethan
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active" href="index.html">
+                                Home
+                            </a>
+                            <a class="navbar-item" href="work.html">
+                                Portfolio
+                            </a>
+                            <a class="navbar-item">
+                                Contact
+                            </a>
+                            <a class="navbar-item" href="./assets/Resume-Ethan.pdf" type="application/pdf"
+                                target="_blank">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container">
+                <div class="container has-text-centered" style="margin-bottom:100px">
+                    <div class="title">
+                        Transform the web one <span
+                            class="animate__animated animate__bounce animate__delay-1s animate__infinite animate__slow"
+                            style="font-size: 80px; display:inline-block">&lt;div&gt;</span> at a time!
+                    </div>
+                    <img src="assets/down-arrow.gif" width="100px" id="animated-arrow">
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-full">
+                        <div class="columns">
+                            <div class="column is-10">
+                                <img src="assets/ethan.JPG" atl="sample" height="600px" width="600px"
+                                    id="main-image"></img>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-10">
+                                <div>
+                                    Hi everyone. My name is Ethan. I was born and raised in Sai Gon, Vietnam, and
+                                    currently
+                                    living
+                                    in Atlanta, Georgia.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-centered">
+                    <div class="column is-full">
+                        <div class="columns">
+                            <div class="column is-10 is-offset-2 has-text-right">
+                                <img src="assets/delta.jpg" atl="sample" height="800px"
+                                    width="800px" id="delta"></img>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-10 is-offset-2">
+                                <div>
+                                    I graduated from Georgia State University with a Bachelor in Business
+                                    Administration. I am also proud to be a flight attendant for Delta Air Lines.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-centered">
+                    <div class="column is-full">
+                        <div class="columns">
+                            <div class="column is-10">
+                                <img src="assets/code.jpg" atl="sample" height="600px" width="600px"></img>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-10">
+                                <div>
+                                    Beside flying, I
+                                    love learning new skills to improve my value. Therefore, I am attending the Georgia
+                                    Tech
+                                    Full
+                                    Stack Flex Coding Program to break into the Web Development industry and I love
+                                    every moment
+                                    of it.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-centered">
+                    <div class="column is-full">
+                        <div class="columns">
+                            <div class="column is-10 is-offset-2 has-text-right">
+                                <img src="assets/internet.jpg" atl="sample" height="600px"
+                                    width="600px"></img>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-10 is-offset-2 has-text-right">
+                                <div>
+                                    I love Front-End ( and efficient in Back-end as well ). I love combining simple
+                                    and
+                                    functional
+                                    codes and my artistic touch to produce beautiful and useful websites. One code
+                                    at a time, I
+                                    hope
+                                    to make the World Wide Web a better place.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns is-centered">
+                    <div class="column is-full has-text-centered portfolio" data-aos="fade-in" data-aos-duration="3000">
+                        <a href="./work.html">See my work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        var target = $("section").children();
+        while (target.length) {
+            target = target.children();
+        }
+        target.end().attr({ "data-aos": "fade-in", "data-aos-easing": "ease-in-out", "data-aos-duration": "3000" })
+        AOS.init();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".navbar-burger").click(function () {
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    </script>
+</body>
+
+</html>

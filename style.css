@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900;1,400;1,600&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.column{
+    /* border: 1px solid black; */
+    margin-top: 50px !important;
+}
+
+div {
+    font-size: 30px
+}
+
+
+.hero.is-primary{
+    background-color: white !important;
+    color: black !important
+}
+
+.hero.is-primary a.navbar-item.is-active{
+    color: white !important
+}
+
+
+.title{
+    color: black !important;
+    font-size: 50px !important;
+    margin-bottom: 100px !important
+}
+
+
+.portfolio{
+    border: 3px solid black;
+    max-width: fit-content;
+}
+
+
+img:not(#animated-arrow){
+    box-shadow: 0px 0px 10px 1px;
+}
+@media(max-width: 767px) {
+.custom-columns {
+    flex-direction: column-reverse;
+    display: flex;}}
