@@ -23,6 +23,7 @@ div {
 
 .page{
     text-decoration: overline;
+    font-weight: 800;
     
 }
 
@@ -49,7 +50,11 @@ div {
 
 .portfolio{
     border: 3px solid black;
-    max-width: fit-content;
+    padding: 10px
+}
+
+.portfolio:hover{
+    font-weight: 800;
 }
 
 button{
@@ -68,14 +73,13 @@ img:not(#animated-arrow, .logo){
     height: 10rem !important;
     width: 10rem !important
 }
-.hero.is-primary a.navbar-item.is-active{
-    background-color:transparent;
-    text-decoration: underline;
 
-}
 
 .navbar-item{
     bottom: 20px !important
+}
+.navbar-item:hover{
+    font-weight: 800 !important;
 }
 
 .navbar-burger span {
@@ -111,19 +115,3 @@ img:not(#animated-arrow, .logo){
     flex-direction: column-reverse;
     display: flex;}}
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        display: none;
-        transition: .5s ease;
-        background-color: #008CBA;
-      }
-
-      .container:hover .overlay {
-        display: block;
-      }
