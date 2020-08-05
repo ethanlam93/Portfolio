@@ -106,10 +106,25 @@ img:not(#animated-arrow, .logo){
 }
 .button:hover{
     background-color: grey !important;
-    color: black !important
+    color: black !important;
 
 }
 
+.social-media{
+   margin-top: 40px;
+}
+
+.social-media a:hover,
+.column a:hover{
+color: rgb(125, 125, 125) !important;
+}
+
+
+#formGroup{
+    padding: 50px;
+    box-shadow: 0px 0px 10px 1px;
+
+}
 
 @media(max-width: 767px) {
 .custom-columns {
