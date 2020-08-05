@@ -84,7 +84,8 @@ img:not(#animated-arrow, .logo){
 
 .navbar-burger span {
     width: 50px !important;
-    height: 6px !important
+    height: 6px !important;
+    left:calc(44% - 8px)!important
 
 }
 
