@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
     <link rel="stylesheet" type="text/css" href="./bulma.css">
+    <script src="https://kit.fontawesome.com/a75d685cd5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -19,9 +20,8 @@
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item">
-                            Ethan
-                        </a>
+                        <img class="navbar-item logo" src="assets/logo2.png" width="200px">
+                        </img>
                         <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                             <span></span>
                             <span></span>
@@ -30,13 +30,13 @@
                     </div>
                     <div id="navbarMenuHeroA" class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item is-active" href="index.html">
+                            <a class="navbar-item page" href="index.html">
                                 Home
                             </a>
-                            <a class="navbar-item" href="work.html">
+                            <a class="navbar-item " href="work.html">
                                 Portfolio
                             </a>
-                            <a class="navbar-item">
+                            <a class="navbar-item" href="contact.html">
                                 Contact
                             </a>
                             <a class="navbar-item" href="./assets/Resume-Ethan.pdf" type="application/pdf"
@@ -161,11 +161,7 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        var target = $("section").children();
-        while (target.length) {
-            target = target.children();
-        }
-        target.end().attr({ "data-aos": "fade-in", "data-aos-easing": "ease-in-out", "data-aos-duration": "3000" })
+        $(".hero-body").find("*").attr({ "data-aos": "fade-in", "data-aos-easing": "ease-in-out", "data-aos-duration": "1000" })
         AOS.init();
     </script>
     <script type="text/javascript">

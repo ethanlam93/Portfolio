@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
     <link rel="stylesheet" type="text/css" href="./bulma.css">
+    <script src="https://kit.fontawesome.com/a75d685cd5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -29,9 +30,8 @@
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item">
-                            Ethan
-                        </a>
+                        <img class="navbar-item logo" src="assets/logo2.png" width="200px">
+                        </img>
                         <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                             <span></span>
                             <span></span>
@@ -43,10 +43,10 @@
                             <a class="navbar-item" href="index.html">
                                 Home
                             </a>
-                            <a class="navbar-item is-active" href="work.html">
+                            <a class="navbar-item page" href="work.html">
                                 Portfolio
                             </a>
-                            <a class="navbar-item">
+                            <a class="navbar-item" href="contact.html">
                                 Contact
                             </a>
                             <a class="navbar-item" href="./assets/Resume-Ethan.pdf" type="application/pdf" target="_blank" >
@@ -65,13 +65,15 @@
                 <!-- First Project -->
                 <div class="columns">
                     <div class="column is-full">
-                        <div class="columns custom-columns">
-                            <div class="column is-two-thirds">
-                                <img src="assets/project-1.png">
-                            </div>
+                        <div class="columns">
                             <div class="column">
                                 <div class="has-text-weight-bold">Impetus</div>
                                 <div class="is-size-4">A dashboard for a better day</div>
+                                <a><i class="fab fa-github fa-lg"></i></a>
+                                <a><i class="fab fa-chrome fa-lg"></i></a>
+                            </div>
+                            <div class="column is-two-thirds">
+                                <img src="assets/project-1.png">
                             </div>
                         </div>
                     </div>
@@ -87,6 +89,8 @@
                             <div class="column">
                                 <div class="has-text-weight-bold">WeatherBoard</div>
                                 <div class="is-size-4">A simple and interactive weather dashboard</div>
+                                <a><i class="fab fa-github fa-lg"></i></a>
+                                <a><i class="fab fa-chrome fa-lg"></i></a>
                             </div>
                         </div>
                     </div>
@@ -99,6 +103,8 @@
                             <div class="column">
                                 <div class="has-text-weight-bold">Work Day Scheduler</div>
                                 <div class="is-size-4">Simple scheduler for your daily tasks</div>
+                                <a><i class="fab fa-github fa-lg"></i></a>
+                                <a><i class="fab fa-chrome fa-lg"></i></a>
                             </div>
                             <div class="column is-two-thirds">
                                 <img src="assets/work-day-scheduler.png">
@@ -117,6 +123,8 @@
                             <div class="column ">
                                 <div class="has-text-weight-bold">Food Quiz</div>
                                 <div class="is-size-4">A fun trivia quiz application about food.</div>
+                                <a><i class="fab fa-github fa-lg"></i></a>
+                                <a><i class="fab fa-chrome fa-lg"></i></a>
                             </div>
                         </div>
                     </div>
@@ -129,6 +137,8 @@
                             <div class="column">
                                 <div class="has-text-weight-bold">Password Generator</div>
                                 <div class="is-size-4">Simple interactive password generator for your next secured password</div>
+                                <a><i class="fab fa-github fa-lg"></i></a>
+                                <a><i class="fab fa-chrome fa-lg"></i></a>
                             </div>
                             <div class="column is-two-thirds">
                                 <img src="assets/password-generator.png">
@@ -147,7 +157,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         
-        $(".is-size-4, .has-text-weight-bold, img").attr({ "data-aos": "fade-in", "data-aos-easing": "ease-in-out", "data-aos-duration": "3000" })
+        $(".hero-body").find("*").attr({ "data-aos": "fade-in", "data-aos-easing": "ease-in-out", "data-aos-duration": "1000" })
         AOS.init();
     </script>
     <script type="text/javascript">

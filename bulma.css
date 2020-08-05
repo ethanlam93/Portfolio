@@ -6474,14 +6474,14 @@ label.panel-block {
         color: #fff; }
     @media screen and (max-width: 1087px) {
       .hero.is-primary .navbar-menu {
-        background-color: #00d1b2; } }
+        background-color: transparent; } }
     .hero.is-primary .navbar-item,
     .hero.is-primary .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
     .hero.is-primary a.navbar-item:hover, .hero.is-primary a.navbar-item.is-active,
     .hero.is-primary .navbar-link:hover,
     .hero.is-primary .navbar-link.is-active {
-      background-color: #00b89c;
+      background-color: transparent;
       color: #fff; }
     .hero.is-primary .tabs a {
       color: #fff;
@@ -6729,7 +6729,7 @@ label.panel-block {
   @media screen and (min-width: 769px), print {
     .hero.is-medium .hero-body {
       padding-bottom: 9rem;
-      padding-top: 9rem; } }
+      } }
   @media screen and (min-width: 769px), print {
     .hero.is-large .hero-body {
       padding-bottom: 18rem;
